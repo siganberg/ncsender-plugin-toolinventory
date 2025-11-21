@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <circle cx="240" cy="240" r="220" fill="none" stroke="#E8D5BA" stroke-width="24"/>
+  <g fill="#E8D5BA">
+    <!-- Tool holder base -->
+    <rect x="88" y="260" width="304" height="60" rx="4"/>
+    <rect x="108" y="220" width="80" height="40"/>
+    <rect x="200" y="220" width="80" height="40"/>
+    <rect x="292" y="220" width="80" height="40"/>
+    
+    <!-- Left tool (flat endmill with diagonal stripes) -->
+    <rect x="128" y="100" width="40" height="120" rx="4"/>
+    <path d="M128 100 L168 140 L168 100 Z" fill="#2C2C2C"/>
+    <path d="M128 140 L168 180 L168 140 Z" fill="#2C2C2C"/>
+    <path d="M128 180 L168 220 L168 180 Z" fill="#2C2C2C"/>
+    
+    <!-- Middle tool (drill/twist bit) -->
+    <rect x="220" y="100" width="40" height="120" rx="4"/>
+    <ellipse cx="240" cy="105" rx="20" ry="8"/>
+    <path d="M230 110 Q235 115 240 110 Q245 115 250 110 L250 130 Q245 125 240 130 Q235 125 230 130 Z" fill="#2C2C2C"/>
+    <path d="M230 130 Q235 135 240 130 Q245 135 250 130 L250 150 Q245 145 240 150 Q235 145 230 150 Z" fill="#2C2C2C"/>
+    <path d="M230 150 Q235 155 240 150 Q245 155 250 150 L250 170 Q245 165 240 170 Q235 165 230 170 Z" fill="#2C2C2C"/>
+    
+    <!-- Right tool (v-bit) -->
+    <rect x="312" y="160" width="40" height="60" rx="4"/>
+    <path d="M332 100 L312 160 L352 160 Z"/>
+  </g>
+</svg>
