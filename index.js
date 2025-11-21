@@ -1066,6 +1066,13 @@ export async function onLoad(ctx) {
           document.getElementById('close-btn').addEventListener('click', function() {
             window.postMessage({ type: 'close-plugin-dialog' }, '*');
           });
+
+          // Close dialog on Escape key
+          document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+              window.postMessage({ type: 'close-plugin-dialog' }, '*');
+            }
+          });
         })();
       </script>
     `,
