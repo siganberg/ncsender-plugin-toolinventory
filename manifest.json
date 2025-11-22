@@ -2,7 +2,7 @@
   "id": "com.ncsender.toolinventory",
   "name": "Tool Inventory",
   "version": "0.1.0",
-  "minAppVersion": "0.3.42",
+  "minAppVersion": "0.3.45",
   "entry": "index.js",
   "icon": "logo.png",
   "author": "ncSender",

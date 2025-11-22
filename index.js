@@ -57,7 +57,7 @@ const validateTool = (tool, allTools, originalTool = null) => {
   }
 
   // Check type
-  const validTypes = ['flat', 'ball', 'v-bit', 'drill', 'chamfer', 'surfacing', 'probe'];
+  const validTypes = ['flat', 'ball', 'v-bit', 'drill', 'chamfer', 'surfacing', 'probe', 'thread-mill'];
   if (!tool.type || !validTypes.includes(tool.type)) {
     errors.push('Invalid tool type');
   }
@@ -676,7 +676,8 @@ export async function onLoad(ctx) {
               'drill': 'Drill',
               'chamfer': 'Chamfer',
               'surfacing': 'Surfacing',
-              'probe': 'Probe'
+              'probe': 'Probe',
+              'thread-mill': 'Thread Mill'
             };
             return typeMap[type] || type;
           }
@@ -785,6 +786,7 @@ export async function onLoad(ctx) {
             html += '<option value="drill"' + (formData.type === 'drill' ? ' selected' : '') + '>Drill</option>';
             html += '<option value="chamfer"' + (formData.type === 'chamfer' ? ' selected' : '') + '>Chamfer</option>';
             html += '<option value="surfacing"' + (formData.type === 'surfacing' ? ' selected' : '') + '>Surfacing</option>';
+            html += '<option value="thread-mill"' + (formData.type === 'thread-mill' ? ' selected' : '') + '>Thread Mill</option>';
             html += '<option value="probe"' + (formData.type === 'probe' ? ' selected' : '') + '>Probe</option>';
             html += '</select>';
             html += '</div>';
